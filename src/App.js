@@ -24,15 +24,35 @@ const App = () => {
 
       axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_ID}`).then(response => setName(response.data.name))
 
-      axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_ID}`).then(response => setDateA(response.data.dt))
+  }, [city])
 
-      axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_ID}`).then(response => setMain(response.data.main))
+  useEffect(() => {
 
-      axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_ID}`).then(response => setLonlate(response.data.coord))
+    axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_ID}`).then(response => setDateA(response.data.dt))
 
-      axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_ID}`).then(response => setSys(response.data.sys))
+  }, [city])
 
-      axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_ID}`).then(response => setWeather(response.data.weather[0]))
+  useEffect(() => {
+
+    axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_ID}`).then(response => setMain(response.data.main))
+
+  }, [city])
+
+  useEffect(() => {
+
+    axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_ID}`).then(response => setLonlate(response.data.coord))
+
+  }, [city])
+
+  useEffect(() => {
+
+    axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_ID}`).then(response => setSys(response.data.sys))
+
+  }, [city])
+
+  useEffect(() => {
+
+    axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_ID}`).then(response => setWeather(response.data.weather[0]))
 
   }, [city])
 
