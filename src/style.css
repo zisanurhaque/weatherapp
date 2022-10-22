@@ -1,0 +1,184 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: bahnschrift;
+    font-weight: 200;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, p, a, span{
+    padding: 3px;
+    margin: 0px;
+    font-weight: 300;
+}
+.mainContainer{
+    width: 100%;
+    float: left;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.appContainer{
+    float: left;
+    width: 400px;
+    height: 580px;
+    background: linear-gradient(45deg, rgb(51, 6, 63), rgb(122, 88, 20));
+    border-radius: 5px;
+    padding: 30px;
+    color: white;
+}
+.appContainer form{
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.appContainer form input{
+    border: none;
+    background: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 8px;
+    color: white;
+    width: 100%;
+    float: left;
+    outline: none;
+}
+.appContainer form button{
+    border: none;
+    background: none;
+    padding: 8px;
+    color: white;
+    width: 15%;
+    float: left;
+    position: absolute;
+    right: 0;
+}
+
+.appContainer .cityName{
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 30px;
+}
+.appContainer .cityName h3{
+    font-size: 22px;
+    padding: 0px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+.appContainer .cityName p{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.appContainer .sunrise{
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.appContainer .sunrise p{
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+.appContainer .sunrise span{
+    width: 100%;
+    float: left;
+}
+.appContainer .sunset{
+    text-align: right;
+}
+
+.appContainer .temp{
+    float: left;
+    width: 100%;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+.appContainer .temp .round{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.appContainer .temp .round h1{
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    font-weight: 200;
+    font-size: 48px;
+}
+.appContainer .temp .round span{
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-left: 10px;
+}
+.appContainer .tempDesc{
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.appContainer .tempDesc p{
+    margin: 0px;
+}
+.appContainer .desc{
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.appContainer .desc h4{
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+}
+.appContainer .lonlat{
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 8px 15px;
+    padding-top: 12px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: black;
+    box-shadow: inset 0px 0px 5px 0px rgb(0, 0, 0);
+}
+.appContainer .lonlat p{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .appContainer{
+        width: 100%;
+        height: 100vh;
+        border-radius: 0px;
+        padding: 20px;
+    }
+}
